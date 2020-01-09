@@ -1,24 +1,24 @@
 #include <stdio.h>
 
-int rev()
+
+void rev()
+
 {
-   char s[1000], r[1000];
-   int begin, end, count = 0;
-
-   printf("\n\nInput a string\n");
-   gets(s);
-while (s[count] != '\0')
-      count++;
-
-   end = count - 1;
-
-   for (begin = 0; begin < count; begin++) {
-      r[begin] = s[end];
-      end--;
-   }
-
-   r[begin] = '\0';
-
-   printf("%s\n", r);
-
+    int i, j, k;
+    char str[100];
+    char rev[100];
+    printf("\n\nEnter a string:\t");
+    scanf("%s", str);
+    printf("The original string is %s\n", str);
+    for(i = 0; str[i] != '\0'; i++);
+    {
+        k = i-1;
+    }
+    for(j = 0; j <= i-1; j++)
+    {
+        rev[j] = str[k];
+        k--;
+    }
+    printf("The reverse string is %s\n", rev);
+    
 }
