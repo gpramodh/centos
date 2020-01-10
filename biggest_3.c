@@ -1,6 +1,6 @@
 #include <stdio.h>
  
-void big()
+int big()
 {
     int num1, num2, num3;
  
